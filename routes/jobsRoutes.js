@@ -4,7 +4,7 @@ import { createJob, getAllJobs, updateJob, deleteJob, showStats } from '../contr
 
 router.route('/').post(createJob).get(getAllJobs);
 //remmeber about :id
-router.route('/stats').post(showStats)
+router.route('/stats').get(showStats)
 router.route('/:id').patch(updateJob).delete(deleteJob);
 
 
